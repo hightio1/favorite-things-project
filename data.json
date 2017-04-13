@@ -1,0 +1,32 @@
++{
+ +	"videogames": [{
+ +		"name": "World of Warcraft",
+ +		"image": "Find Image Later and put it here",
+ +		"description": "A big game where you complete quests with other players"
+ +	}, {
+ +		"name": "Battlefield 1942",
+ +		"image": "Find Image Later and put it here",
+ +		"description": "The original large scale shooting game"
+ +
+ +	}, {
+ +		"name": "Diablo 2",
+ +		"image": "Find Image Later and put it here",
+ +		"description": "The best of the Diablo games"
+ +
+ +
+ +	}],
+ +
+ +	"foods": [{
+ +		"name": "Pizza",
+ +		"image": "Find Image Later and put it here",
+ +		"description": "Pizza is really good"
+ +	}, {
+ +		"name": "Cheeseburgers",
+ +		"image": "Find Image Later and put it here",
+ +		"description": "Cheeseburgers are really good"
+ +	}, {
+ +		"name": "Ham sandwhiches",
+ +		"image": "Find Image Later and put it here",
+ +		"description": "Good stuff"
+ +	}]
+ +} 
