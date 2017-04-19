@@ -1,50 +1,84 @@
- <!DOCTYPE html>
-  <html lang="en">
-      
-  <head>
-      <title>A Favorite Thing</title>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" href="style.css" />
-  </head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nintendo vs. Sega</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<style>
+	body, html {
+	   height: 100%;
+	   font-family: "Inconsolata", sans-serif;
+	}
+	.bgimg {
+	   background-position: center;
+	   background-size: cover;
+	   background-image: url("images/nintendo.png");
+	   min-height: 70%;
+	}
+	.menu {
+	   display: none;
+	}
+	</style>
+</head>
+<body>
+	<!-- Header with image -->
+	<header class="bgimg w3-display-container w3-grayscale-min" id="home"></header><!-- Add a background color and large text to the whole page -->
+	<div class="w3-sand w3-grayscale w3-large">
+		<!-- About Container -->
+		<div class="w3-container" id="about">
+			<div class="w3-content" style="max-width:700px">
+				<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">NINTENDO VS SEGA</span></h5>
+				<p>When I was around 7 years old I got my first game console. A Sega Genesis. I spent a long time building up a huge collection of games for it until I was around 10. When I was 10 my brother convinced me that the Super Nintendo was the thing to own, and that I should trade all my stuff into Funcoland to get one. I traded all 50 or so games that I had in and got a Super Nintendo with one game. The game was called Starfox and was very fun to play. Over the next few years I spent all my allowance and eventual job money building up my Super Nintendo collection. I still can't figure out which one I really liked better.</p>
+			</div>
+		</div><!-- Menu Container -->
+		<div class="w3-container" id="menu">
+			<div class="w3-content" style="max-width:700px">
+				<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BEST GAMES FOR EACH SYSTEM</span></h5>
+				<div class="w3-row w3-center w3-card-2 w3-padding">
+					<a href="javascript:void(0)" id="myLink" onclick="openMenu(event, 'Eat');">
+					<div class="w3-col s6 tablink">
+						Nintendo
+					</div></a> <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+					<div class="w3-col s6 tablink">
+						Sega
+					</div></a>
+				</div>
+				<div class="w3-container menu w3-padding-48 w3-card-2" id="Eat">
+					<div class="nintendo"></div>
+				</div>
+				<div class="w3-container menu w3-padding-48 w3-card-2" id="Drinks">
+					<div class="sega"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
 
-      
-  <body>
- 
-   <p>Replace me with your favorite things HTML.</p>
-     <header>
-         <h1>My Favorite Things</h1>
-     </header>
- 
-     <main>
-         
-         <h1>Videogames</h1>
-         <div id="videogames">
-             <h2>Name of favorite games</h2>
-             <img src="images\sega.jpg" alt="Sega Genesis" style=width:304px; height:228px;>
-             <p>
-                 Add Favorite HTML Here
-             </p>
-         </div>
-         
-         <h1>Foods</h1>
-         <div id="foods">
-             
-             <h2>Name of Favorite Food, pull from JSON</h2>
-             
-             <p>Pull description from JSON here.</p>
- 
-         </div>
- 
- 
-     </main>
- 
-     <!-- jQuery -->
-     <script src=" https://code.jquery.com/jquery-2.1.4.min.js "></script>
-     <script type="text/javascript " language="Javascript "></script>
- 
-     <!-- javascript -->
-     <script src="js/script.js "></script>
- 
- </body>
- </html>
-  
+	// Tabbed Menu
+	function openMenu(evt, menuName) {
+	 var i, x, tablinks;
+	 x = document.getElementsByClassName("menu");
+	 for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";
+	 }
+	 tablinks = document.getElementsByClassName("tablink");
+	 for (i = 0; i < x.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+	 }
+	 document.getElementById(menuName).style.display = "block";
+	 evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+	}
+	document.getElementById("myLink").click();
+	</script> <!-- jQuery -->
+	 
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js">
+	</script> 
+	<script language="Javascript" type="text/javascript">
+	</script> <!-- javascript -->
+	 
+	<script src="script.js">
+	</script>
+</body>
+</html>

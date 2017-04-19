@@ -1,32 +1,54 @@
-+{
- +	"videogames": [{
- +		"name": "World of Warcraft",
- +		"image": "Find Image Later and put it here",
- +		"description": "A big game where you complete quests with other players"
- +	}, {
- +		"name": "Battlefield 1942",
- +		"image": "Find Image Later and put it here",
- +		"description": "The original large scale shooting game"
- +
- +	}, {
- +		"name": "Diablo 2",
- +		"image": "Find Image Later and put it here",
- +		"description": "The best of the Diablo games"
- +
- +
- +	}],
- +
- +	"foods": [{
- +		"name": "Pizza",
- +		"image": "Find Image Later and put it here",
- +		"description": "Pizza is really good"
- +	}, {
- +		"name": "Cheeseburgers",
- +		"image": "Find Image Later and put it here",
- +		"description": "Cheeseburgers are really good"
- +	}, {
- +		"name": "Ham sandwhiches",
- +		"image": "Find Image Later and put it here",
- +		"description": "Good stuff"
- +	}]
- +} 
+{
+	"nintendo": [{
+		"name": "Secret of Mana",
+		"image": "images/secretofmana.jpg",
+		"description": "A well crafted RPG that features 3 player co-op."
+	}, {
+		"name": "Super Mario World",
+		"image": "images/supermarioworld.png",
+		"description": "The original launch game.  Side scrolling perfection."
+
+	}, {
+		"name": "Zombies Ate My Neighbors",
+		"image": "images/zombies.jpg",
+		"description": "One of the most fun 2 player games ever.  Fight zombies."
+   
+	},{
+		"name": "Super Bomberman",
+		"image": "images/bomberman.png",
+		"description": "4 player game where you blow up your buddies."
+   
+	}, {
+		"name": "Rock N Roll Racing",
+		"image": "images/rocknroll.png",
+		"description": "One of the best soundtracks in a game.  Racing style."
+   
+	}],
+
+	"sega": [{
+		"name": "Batman",
+		"image": "images/batman.jpg",
+		"description": "A surprising mix of play modes all of which are well done."
+	}, {
+		"name": "Herzog Zwei",
+		"image": "images/herzogzwei.png",
+		"description": "A strategy game where you can control the battle."
+
+	}, {
+		"name": "Hyperstone Heist",
+		"image": "images/hyperstoneheist.jpg",
+		"description": "Not quite as good as Turtles in Time but very close."
+   
+	},{
+		"name": "Streets of Rage 2",
+		"image": "images/streetsofrage2.jpg",
+		"description": "The best beat em up ever made.  Best of the trilogy."
+   
+	}, {
+		"name": "Warsong",
+		"image": "images/warsong.png",
+		"description": "A hugely time consuming war strategy game. Tons of depth."
+   
+	}]
+    
+}
