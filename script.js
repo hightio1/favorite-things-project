@@ -63,19 +63,27 @@ $(function() {
 
         //Click event to toggle 
 
-                $(".nintendo h2").on("click", function() {
-            $(this).next(".nintendo p").toggle();
+$('.nintendo h2').click(function(e){
 
-        });
+    e.preventDefault();
+    var $this = $(this).parent().find('p');
+    $(".nintendo p").not($this).hide();
 
+
+    $this.toggle();
+
+});
         
-        $(".sega h2").on("click", function() {
+$('.sega h2').click(function(e){
 
-            $(this).next(".sega p").toggle();
+    e.preventDefault();
+    var $this = $(this).parent().find('p');
+    $(".sega p").not($this).hide();
 
+    $this.toggle();
+
+});
 
         });
 
     });
-
-});
